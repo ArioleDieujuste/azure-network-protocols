@@ -36,6 +36,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/media/manage-resource-groups-portal/manage-resource-groups-add-group.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+  
 - Create a Resource Group in Microsoft Azure. 
 - Create the Windows 10 Virtual Machine (VM).
 - While creating the VM, select the previously created Resource Group
@@ -91,4 +92,15 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - From your Windows 10 VM, attempt to issue your VM a new IP address from the command line (ipconfig /renew)
 - Observe the DHCP traffic appearing in WireShark
 
+  
+<h2>Observe DNS Traffic</h2>
+
+<p>
+<img src="https://www.petermstewart.net/wp-content/uploads/2020/07/dhcp-q01-01.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  
+- Back in Wireshark, filter for DNS traffic only
+- From your Windows 10 VM within a command line, use nslookup to see what google.com and disney.com’s IP addresses are
+- Observe the DNS traffic being show in WireShark
 
