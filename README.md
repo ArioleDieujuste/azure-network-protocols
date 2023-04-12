@@ -74,6 +74,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://iotechonline.com/wp-content/uploads/2020/10/wireshark-screenshot.webp" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+  
 - Back in Wireshark, filter for SSH traffic only
 - From your Windows 10 VM, “SSH into” your Ubuntu Virtual Machine (via its private IP address)
 - Type commands (username, pwd, etc) into the linux SSH connection and observe SSH traffic spam in WireShark
