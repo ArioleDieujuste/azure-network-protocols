@@ -51,7 +51,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>Observe ICMP Traffic</h2>
 
 <p>
-<img src="https://i.stack.imgur.com/WLtCX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.stack.imgur.com/WLtCX.png" height="80%" width="80%" alt="Photo of icmp traffic"/>
 </p>
 <p>
 
@@ -72,7 +72,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>Observe SSH Traffic</h2>
 
 <p>
-<img src="https://iotechonline.com/wp-content/uploads/2020/10/wireshark-screenshot.webp" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://iotechonline.com/wp-content/uploads/2020/10/wireshark-screenshot.webp" height="80%" width="80%" alt="Photo of rdp traffic ssh"/>
 </p>
 <p>
   
@@ -84,7 +84,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>Observe DHCP Traffic</h2>
 
 <p>
-<img src="https://www.petermstewart.net/wp-content/uploads/2020/07/dhcp-q01-01.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://www.petermstewart.net/wp-content/uploads/2020/07/dhcp-q01-01.png" height="80%" width="80%" alt="Photo of dhcp traffic"/>
 </p>
 <p>
   
@@ -96,11 +96,22 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>Observe DNS Traffic</h2>
 
 <p>
-<img src="https://www.petermstewart.net/wp-content/uploads/2020/07/dhcp-q01-01.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://www.petermstewart.net/wp-content/uploads/2020/07/dhcp-q01-01.png" height="80%" width="80%" alt="Photo of dns traffic"/>
 </p>
 <p>
   
 - Back in Wireshark, filter for DNS traffic only
 - From your Windows 10 VM within a command line, use nslookup to see what google.com and disney.com’s IP addresses are
 - Observe the DNS traffic being show in WireShark
+
+  <h2>Observe RDP Traffic</h2>
+
+<p>
+<img src="https://unit42.paloaltonetworks.com/wp-content/uploads/2021/03/word-image-146.png" height="80%" width="80%" alt="Photo of rdp traffic"/>
+</p>
+<p>
+  
+- Back in Wireshark, filter for RDP traffic only (tcp.port == 3389)
+- Oserve the immediate non-stop spam of traffic? Why do you think it’s non-stop spamming vs only showing traffic when you do an activity?
+- Answer: because the RDP (protocol) is constantly showing you a live stream from one computer to another, therefor traffic is always being transmitted
 
