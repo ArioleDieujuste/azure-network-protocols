@@ -80,5 +80,15 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Type commands (username, pwd, etc) into the linux SSH connection and observe SSH traffic spam in WireShark
 - Exit the SSH connection by typing ‘exit’ and pressing [Enter]
 
+<h2>Observe DHCP Traffic</h2>
+
+<p>
+<img src="https://www.petermstewart.net/wp-content/uploads/2020/07/dhcp-q01-01.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  
+- Back in Wireshark, filter for DHCP traffic only
+- From your Windows 10 VM, attempt to issue your VM a new IP address from the command line (ipconfig /renew)
+- Observe the DHCP traffic appearing in WireShark
 
 
