@@ -50,7 +50,7 @@ Observe Your Virtual Network within Network Watcher
 <h2>Create our Resources</h2>
 
 <p>
-<img src="https://wiki.wireshark.org/uploads/__moin_import__/attachments/Internet_Control_Message_Protocol/ICMP.JPG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.stack.imgur.com/WLtCX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Part 2 (Observe ICMP Traffic)
